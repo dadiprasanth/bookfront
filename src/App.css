@@ -1,38 +1,93 @@
-.App {
+body{
+  margin:0px;
+  padding:0px;
+  background-color: rgb(43,62,79);
+}
+.home{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.aut-conatiner{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(204, 161, 244);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.aut-conatiner form{
+  display: grid;
+  width: 30%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  
 }
+.aut-conatiner form input{
+  margin-bottom:10px;
+ 
+}
+.book{
+  padding: 20px;
+  background-color: rgb(234,238,242);
+  border: 10px;
+  box-shadow: 5px 5px 10px #888;
+  border-radius: 20px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+}
+.book:hover{
+  cursor: pointer;
+}
+.book-img{
+  width:25vw;
+  height:25vh;
+}
+.book-img img{
+  height: 100%;
+  width: 100%;
+}
+.hidden{
+  position: fixed;
+  left: 0px;
+  top:0px;
+  height: 100vh;
+  width: 100vw;
+  background-color:black;
+  color:white;
+  padding: 30px;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center; */
 }
-
-.App-link {
-  color: #61dafb;
+.hidden form{
+  display:grid;
+  width: 50%;
+  row-gap: 10px;
+  margin:auto;
 }
+.hidden div{
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid white;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.bookholder{
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  row-gap: 10px;
+}
+input:focus{
+  outline: none;
+}
+button{
+  background-color: yellow;
+  border: 0px;
+  box-shadow: 5px 5px 10px #888;
+  margin: 0px 30px;
+}
+.add-button{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.title{
+  color:rgb(137, 137, 245)
 }
